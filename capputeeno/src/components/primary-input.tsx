@@ -32,7 +32,7 @@ export function PrimaryInputWSearchIcon(props: InputProps) {
     return (
         <InputContainer>
             <PrimaryInput {...props}/>
-            <SearchIcon />
+            <SearchIcon/>
         </InputContainer>
     )
 }
