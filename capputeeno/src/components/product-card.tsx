@@ -1,3 +1,4 @@
+"use client"
 import { formatPrice } from "@/utils/format-price"
 import { styled } from "styled-components"
 
@@ -46,7 +47,7 @@ const Card = styled.div`
         flex-direction: column;
         padding: 8px 0;
 
-        > div {
+        > hr {
             width: 228px;
             height: 1px;
             margin: 8px 0;
@@ -60,10 +61,10 @@ export default function ProductCard(props : ProductCardProps){
     const price = formatPrice(props.price)
     return(
         <Card>
-            <img src={props.image}/>
+            <img src={props.image}  alt={props.title}/>
             <div>
                 <h3>{props.title}</h3>
-                <div></div>
+                <hr/>
                 <p>{price}</p>
             </div>
         </Card>
