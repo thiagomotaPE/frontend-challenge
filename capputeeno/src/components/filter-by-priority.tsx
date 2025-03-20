@@ -1,3 +1,4 @@
+"use client"
 import { styled } from "styled-components"
 import { ArrowIcon } from "./icons/Arrow-icon"
 import { useState } from "react"
@@ -44,6 +45,7 @@ const PriorityFilter = styled.div`
     list-style: none;
 
     top: 100%;
+    right: 8px;
 
     li {
         color: var(--text-dark);
