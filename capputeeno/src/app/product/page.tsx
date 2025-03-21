@@ -6,8 +6,6 @@ import { useProduct } from "@/hooks/useProduct"
 import { formatPrice } from "@/utils/format-price"
 import styled from "styled-components"
 
-interface ProductProps {}
-
 const Container = styled.div`
     display: flex;
     align-items: flex-start;
@@ -104,7 +102,6 @@ const ProductInfo = styled.div`
 
 export default function Product({ searchParams }: { searchParams: { id: string } }){
     const { data }= useProduct(searchParams.id);
-    console.log(data)
     return(
         <DefaultPageLayout>
             <Container>
